@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29edd2c2cd3b1bf468cf1adeaf7a4acf, type: 3}
-  m_Name: Blinky
+  m_Name: Inky
   m_EditorClassIdentifier: 
   m_Prefab: {fileID: 2268550308446859012, guid: 96f48238a44adbc4fa69102435259a7f, type: 3}
-  m_Type: 0
+  m_Type: 2
   m_MoveSpeed: 10
-  m_NormalMat: {fileID: 2100000, guid: 8155845591aa40746b578777a4fc02e0, type: 2}
+  m_NormalMat: {fileID: 2100000, guid: 648f4cfe4b2eb9444b3655f9324afc49, type: 2}
   m_FrightenedMat: {fileID: -2738848868002061094, guid: e8b4aae18950abb4c9b07144c5305742, type: 3}

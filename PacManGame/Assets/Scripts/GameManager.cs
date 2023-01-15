@@ -5,7 +5,7 @@ using Pacman.Core;
 
 namespace Pacman
 {
-    public class GameManger : MonoSingletonGeneric<GameManger>
+    public class GameManager : MonoSingletonGeneric<GameManager>
     {
         [SerializeField] private PacmanService m_PacmanService;
         [SerializeField] private GhostService m_GhostService;
@@ -13,6 +13,7 @@ namespace Pacman
         void Start()
         {
             m_PacmanService.StartGame();
+            m_GhostService.StartGame();
         }
 
     }

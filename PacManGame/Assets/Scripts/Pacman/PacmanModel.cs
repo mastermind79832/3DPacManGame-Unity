@@ -10,7 +10,7 @@ namespace Pacman
         [SerializeField] private PacmanView m_Prefab;
         [SerializeField] private float m_Speed;
 
-        public PacmanView GetPrefab()   { return m_Prefab;  }
-        public float GetSpeed()         { return m_Speed;   }
+        public PacmanView Prefab => m_Prefab;  
+        public float Speed => m_Speed; 
     }
 }

@@ -8,19 +8,18 @@ namespace Pacman
     {
         private GhostView m_View;
         private GhostModelSO m_Model;
-		private GhostModelSO ghostModel;
-		private Transform spawnPoint;
-
-		public GhostController(GhostView view, GhostModelSO model)
-		{
-			m_View = view;
-			m_Model = model;
-		}
 
 		public GhostController(GhostModelSO ghostModel, Transform spawnPoint)
 		{
-			this.ghostModel = ghostModel;
-			this.spawnPoint = spawnPoint;
+			m_Model = ghostModel;
+			InitiateGhost(spawnPoint);
+		}
+
+		private void InitiateGhost(Transform spawnPoint)
+		{
+			m_View = Object.Instantiate(m_Model.Prefab, spawnPoint);
+			m_View.SetController(this);
+			m_View.SetColor(m_Model.GetMaterial());
 		}
 	}
 }

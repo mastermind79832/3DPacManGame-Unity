@@ -12,7 +12,7 @@ namespace Pacman
         public PacmanController(PacmanModel model, Transform spawn)
 		{
 			m_Model = model;
-            m_View = Object.Instantiate(model.GetPrefab(), spawn);
+            m_View = Object.Instantiate(model.Prefab, spawn);
             m_View.SetController(this);
 		}
 	}
